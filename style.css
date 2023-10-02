@@ -1,0 +1,45 @@
+:root {
+    --background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: var(--background);
+
+}
+
+.gallary {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+    max-width: 800px;
+}
+
+.card {
+    position: relative;
+    left: 0px;
+    width: 100px;
+    height: 360px;
+    overflow: hidden;
+    transition: 0.4s ease-in-out;
+    flex: 0.25;
+    background: var(--background);
+}
+
+.card img {
+    height: 360px;
+}
+
+.card:hover {
+    flex: 2;
+    font-weight: bold;
+    cursor: pointer;
+}
